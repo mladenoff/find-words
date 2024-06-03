@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+
+const findWords = require('./findWords.js')
+
+const args = process.argv.slice(2)
+
+const inputString = args[0]
+
+// Allow for inputs with or without brackets and words with or without quotes
+let dictionary = args[1].replace(/[[\]]/g, '').trim().split(',').map(word =>(
+  word.trim().replace(/['"]/g, '')
+))
+
+
+console.log(findWords(inputString, dictionary))
