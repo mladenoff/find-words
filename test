@@ -1,5 +1,5 @@
 #! /usr/bin/env node
 
-const tests = require('./findWords.test.js')
+const tests = require('./findWords.test.js').default
 
 console.log(tests())
