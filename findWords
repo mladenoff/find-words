@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const findWords = require('./findWords.js')
+const findWords = require('./findWords.js').default
 
 const args = process.argv.slice(2)
 

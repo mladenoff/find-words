@@ -1,6 +1,6 @@
 const assert = require('assert')
 
-const findWords = require('./findWords.js')
+const findWords = require('./findWords.js').default
 
 const cases =  [
   { inputString: "ate",
